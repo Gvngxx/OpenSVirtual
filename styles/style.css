@@ -1,0 +1,58 @@
+/* Ajustar el tamaño de la ventana y fondo negro */
+html, body {
+	overflow: hidden;
+	user-select: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #717171;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Contenedor centrado para Three.js */
+#three-container {
+	width: 93%;
+	height: 83%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 13px;
+	padding: 4px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+	background-color: #111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden; /* Evita que el canvas se desborde */
+}
+
+/* Ajustar el canvas al div */
+canvas {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 13px;
+}
+
+/* Estilización del título */
+h1 {
+	font-size: 28px;
+	font-family: 'Courier New', Courier, monospace;
+	color: white;
+	text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 9px;
+	padding: 10px 15px;
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	pointer-events: none;
+	white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+}
