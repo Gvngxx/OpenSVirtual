@@ -6,7 +6,7 @@
 - 🌍 **Mundo 3D interactivo:** Utilizando Three.js para renderizar un mundo virtual en tiempo real, proporcionando gráficos 3D fluidos y realistas dentro del navegador.
 - 🎮 **Movimiento en primera persona:** Controla un cubo en un entorno en 3D con movimiento en primera persona, explorando diferentes áreas del mundo virtual.
 - ⚡ **Optimización para rendimiento:** El uso eficiente de **WebGL** asegura un alto rendimiento en una amplia gama de dispositivos.
-- 🌐 **Compatible con navegadores modernos:** No es necesario instalar ningún software adicional, solo un navegador web compatible con WebGL.
+';/- 🌐 **Compatible con navegadores modernos:** No es necesario instalar ningún software adicional, solo un navegador web compatible con WebGL.
 
 ## 📦 Instalación
 
