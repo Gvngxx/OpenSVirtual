@@ -54,26 +54,61 @@ plane.position.y = -1;
 plane.receiveShadow = true; // Habilitar recepción de sombras
 scene.add(plane);
 
-// Crear el cubo con sombras
-defineMaterial = new THREE.MeshStandardMaterial({ color: 0xFF0000 });
-const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
-const cubeMaterial = new THREE.MeshStandardMaterial({ color: 0xFF0000 });
-const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
-cube.castShadow = true; // Habilitar sombras en el cubo
-scene.add(cube);
+const objects = [];
+const spawn = {};
+const gravity = -0.09;
 
-// Posicion de los objetos
+function spawnObj(name, { position, size, shape, color = 0xFF0000 }) {
+  let geometry;
+  switch (shape) {
+    case "cube":
+      geometry = new THREE.BoxGeometry(size.x, size.y, size.z);
+      break;
+    case "triangle":
+      geometry = new THREE.ConeGeometry(size.x, size.y, 3);
+      break;
+    case "sphere":
+      geometry = new THREE.SphereGeometry(size.x / 2, 32, 32);
+      break;
+    default:
+      console.warn("Forma no reconocida");
+      return;
+  }
+  const material = new THREE.MeshStandardMaterial({ color });
+  const newObj = new THREE.Mesh(geometry, material);
+  newObj.position.set(position.x, position.y, position.z);
+  newObj.castShadow = true;
+  newObj.velocity = { x: 0, y: 0, z: 0 };
+  scene.add(newObj);
+  objects.push(newObj);
+  spawn[name] = newObj;
+}
+
+// Actualizar físicas
+function updatePhysics() {
+  objects.forEach((obj) => {
+    if (obj.position.y > -0.5) {
+      obj.velocity.y += gravity;
+      obj.position.y += obj.velocity.y;
+    } else {
+      obj.velocity.y = 0;
+      obj.position.y = -0.5;
+    }
+  });
+}
+
+// Posicion de la camara
 camera.position.x = 0;
 camera.position.y = 0;  // Posicionamos la cámara
 camera.position.z = 5;
+// Objetos
+spawnObj("cubeR", { position: { x: 0, y: 3, z: 0 }, size: { x: 1, y: 1, z: 1 }, shape: "cube", color: 0xFF0000 }); // Añadimos un Cubo
 
 // Función de animación
 function render() {
   requestAnimationFrame(render);
-  cube.rotation.x += 0.01;
-  cube.rotation.y += 0.01;
+  updatePhysics();
   renderer.render(scene, camera);
 }
 
 render();
-
