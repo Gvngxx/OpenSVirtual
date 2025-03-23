@@ -62,6 +62,7 @@ Si deseas contribuir a **OpenSVirtual**, sigue estos pasos:
 ## 📅 Roadmap
 1. **v0.1.0-alpha** - "**Void**": Primera versión con un cubo en el espacio de la escena.
 2. **v0.2.0-alpha** - "**Iluminación Dinámica**": Añadimos unas sombras a la escena.
-3. **Futuro** - Nuevas funcionalidades en desarrollo.
+3. **v0.3.0-alpha** - "**Motor de físicas**": Añadimos un pequeño motor de fisica para testeo.
+4. **Futuro** - Nuevas funcionalidades en desarrollo.
 
 💡 *Creado por Gvngxx con Three.js. ¡Gracias por probar OpenSVirtual!* 🚀
