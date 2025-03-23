@@ -10,12 +10,20 @@ const camera = new THREE.PerspectiveCamera(
 );
 camera.position.z = 5; // Posicionamos la cámara
 
+window.addEventListener("resize", () => {
+  const width = container.clientWidth || window.innerWidth;
+  const height = container.clientHeight || window.innerHeight;
+  renderer.setSize(width, height);
+  camera.aspect = width / height;
+  camera.updateProjectionMatrix();
+});
+
 // Seleccionar el contenedor donde irá el renderizador
 const container = document.getElementById("three-container");
 
 // Crear el renderizador y configurar su tamaño al div
 const renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setSize(container.clientWidth, container.clientHeight);
+renderer.setSize(container.clientWidth || window.innerWidth, container.clientHeight || window.innerHeight);
 renderer.setClearColor(0xADD8E6, 1);
 
 // Agregar el canvas al contenedor
@@ -38,18 +46,10 @@ scene.add(cube);
 
 // Función de animación
 function render() {
+  requestAnimationFrame(render);
   cube.rotation.x += 0.01;
   cube.rotation.y += 0.01;
-
   renderer.render(scene, camera);
-  requestAnimationFrame(render);
 }
 
 render();
-
-// Ajustar el tamaño del renderizador cuando la ventana cambie
-window.addEventListener("resize", () => {
-  renderer.setSize(container.clientWidth, container.clientHeight);
-  camera.aspect = container.clientWidth / container.clientHeight;
-  camera.updateProjectionMatrix();
-});

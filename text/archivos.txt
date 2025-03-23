@@ -1,0 +1,17 @@
+/core/  
+  ├── script.js  
+/node_modules/  
+  ├── three/  
+  ├── package-lock.json  
+/styles/  
+  ├── style.css  
+  ├── img/  
+      ├── 3dthree.png  
+/text/  
+  ├── archivos.txt  
+  ├── dependencias.txt  
+.replit  
+replit.nix  
+index.html  
+package.json  
+README.md 

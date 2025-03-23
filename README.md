@@ -1,12 +1,12 @@
-# 🌍OpenSVirtual
+# 🌍 OpenSVirtual
 
-**OpenSVirtual** (también conocido como **OpenSV**) es un mundo 3D en primera persona desarrollado por Gvngxx utilizando **Three.js**. En este juego, controlas un cubo dentro de un mundo virtual que puedes explorar y modificar. La experiencia está centrada en el movimiento libre dentro de un entorno 3D, permitiendo una gran flexibilidad y posibilidades de expansión.
+**OpenSVirtual** (también conocido como **OpenSV**) es un mundo 3D en primera persona desarrollado por **Gvngxx** utilizando **Three.js**. En este juego, controlas un cubo dentro de un mundo virtual que puedes explorar y modificar. La experiencia está centrada en el movimiento libre dentro de un entorno 3D, permitiendo una gran flexibilidad y posibilidades de expansión.
 
 ## 🚀 Características
-- 🌍 **Mundo 3D interactivo:** Utilizando Three.js para renderizar un mundo virtual en tiempo real, proporcionando gráficos 3D fluidos y realistas dentro del navegador.
-- 🎮 **Movimiento en primera persona:** Controla un cubo en un entorno en 3D con movimiento en primera persona, explorando diferentes áreas del mundo virtual.
-- ⚡ **Optimización para rendimiento:** El uso eficiente de **WebGL** asegura un alto rendimiento en una amplia gama de dispositivos.
-';/- 🌐 **Compatible con navegadores modernos:** No es necesario instalar ningún software adicional, solo un navegador web compatible con WebGL.
+- 🌍 **Mundo 3D interactivo:** Renderizado en tiempo real con Three.js, proporcionando gráficos fluidos y realistas dentro del navegador.
+- 🎮 **Movimiento en primera persona:** Controla un cubo en un entorno 3D con movimiento libre.
+- ⚡ **Optimización para rendimiento:** Uso eficiente de **WebGL** para asegurar un alto rendimiento en diversos dispositivos.
+- 🌐 **Compatible con navegadores modernos:** Funciona sin necesidad de instalar software adicional, solo un navegador con WebGL.
 
 ## 📦 Instalación
 
@@ -14,7 +14,7 @@ Para comenzar a desarrollar o ejecutar **OpenSVirtual**, sigue estos pasos:
 
 1. Clona el repositorio en tu máquina local:
     ```bash
-    git clone https://github.com/THEHACKERNOW/OpenSVirtual.git
+    git clone https://github.com/Gvngxx/OpenSVirtual.git
     ```
 
 2. Navega a la carpeta del proyecto:
@@ -22,41 +22,47 @@ Para comenzar a desarrollar o ejecutar **OpenSVirtual**, sigue estos pasos:
     cd OpenSVirtual
     ```
 
-3. Instala las dependencias necesarias (Si estás usando un sistema basado en Node.js):
+3. Instala las dependencias necesarias (si usas Node.js):
     ```bash
     npm install
     ```
 
-4. jecuta el proyecto (si estás utilizando un servidor local):
+4. Ejecuta el proyecto (si usas un servidor local):
     ```bash
     npm start
     ```
 
-5. Abre tu navegador y ve a ```http://localhost:3000``` para ver el juego en acción.
+5. Abre tu navegador y ve a:
+    ```bash
+    http://localhost:3000
+    ```
+    para ver el juego en acción.
 
 ## 🎮 Controles
-- W, A, S, D: Movimiento en el mundo (adelante, atrás, izquierda, derecha).
-
-- Ratón: Mira alrededor en el mundo virtual.
-
-- Espacio: Salta.
-
-- Shift: Corre (mantener presionado).
-
-- Esc: Pausa el juego o cierra el menú de pausa.
+- **W, A, S, D** → Moverse en el mundo 3D.
+- **Ratón** → Girar la cámara y mirar alrededor.
+- **Espacio** → Saltar.
+- **Shift (mantener presionado)** → Correr.
+- **Esc** → Pausar el juego o cerrar el menú de pausa.
 
 ## 🧑‍💻 Contribuciones
-Si deseas contribuir a **OpenSVirtua**, puedes hacerlo de la siguiente manera:
+Si deseas contribuir a **OpenSVirtual**, sigue estos pasos:
 
-1. Haz un fork de este repositorio.
-
-2. Crea una nueva rama para tu característica (```git checkout -b nueva-caracteristica```).
-
-3. Realiza tus cambios y haz commit (```git commit -am 'Añadir nueva característica'```).
-
-4. Envía un pull request describiendo las mejoras o características que has implementado.
+1. Haz un fork del repositorio.
+2. Crea una nueva rama para tu mejora:
+    ```bash
+    git checkout -b nueva-caracteristica
+    ```
+3. Realiza tus cambios y haz commit:
+    ```bash
+    git commit -am "Añadir nueva característica"
+    ```
+4. Envía un **pull request** con una descripción de tus mejoras.
 
 ## 📅 Roadmap
-1. **v0.1.0-alpha** - "**Void**": Primera alpha añade un cubo a un espacio.
+1. **v0.1.0-alpha** - "**Void**": Primera versión con un cubo en el espacio.
+2. **Futuro** - Nuevas funcionalidades en desarrollo.
 
-2. **none** -  "**NAME**"
+---
+
+💡 *Creado por Gvngxx con Three.js. ¡Gracias por probar OpenSVirtual!* 🚀
