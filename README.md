@@ -60,8 +60,9 @@ Si deseas contribuir a **OpenSVirtual**, sigue estos pasos:
 4. Envía un **pull request** con una descripción de tus mejoras.
 
 ## 📅 Roadmap
-1. **v0.1.0-alpha** - "**Void**": Primera versión con un cubo en el espacio.
-2. **Futuro** - Nuevas funcionalidades en desarrollo.
+1. **v0.1.0-alpha** - "**Void**": Primera versión con un cubo en el espacio de la escena.
+2. **v0.2.0-alpha** - "**Iluminación Dinámica**": Añadimos unas sombras a la escena.
+3. **Futuro** - Nuevas funcionalidades en desarrollo.
 
 ---
 
